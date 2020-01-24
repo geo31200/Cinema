@@ -15,4 +15,5 @@ public interface PersonRepository  extends JpaRepository<Person, Integer>{
 	
 	@Query("select p from Person p where extract(year from birthdate) = ?1")
 	Set<Person>findByBirthdateYear(int year);
+	Set<Person>findByBirthdateYearBetween(int year, int years);
 }
