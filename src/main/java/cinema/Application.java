@@ -1,0 +1,14 @@
+package cinema;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication  //springboot gere cet appli et genere du code automatiquement.
+public class Application {
+
+	public static void main(String[] args) {
+		
+		SpringApplication.run(Application.class, args); // permet de scanner toutes les classes des différents repertoires du cinéma
+	}
+
+}

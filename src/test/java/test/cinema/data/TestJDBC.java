@@ -49,7 +49,7 @@ class TestJDBC {
 	void test() throws SQLException {
 		
 		var listMovie = new TreeSet<>(Comparator.comparing(Movie::getTitle).thenComparing(Movie::getYear));
-		// thenComparing ajoute un autre critere de comparaison en cas d'égalité
+		// thenComparing ajoute un autre critere de comparaison en cas d'ï¿½galitï¿½
 		String sql = "select* from film";
 		try (Connection connexion = ds.getConnection())
 		{

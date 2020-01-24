@@ -23,7 +23,7 @@ public class Movie {	//model
 		
 	}
 	
-	public Movie(String title, int year, int duration) {		// paramètre de l'objet Movie
+	public Movie(String title, int year, int duration) {		// paramï¿½tre de l'objet Movie
 		
 		this(title, year, duration,null);
 	}

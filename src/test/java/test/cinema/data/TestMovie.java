@@ -28,7 +28,7 @@ class TestMovie {
 			// add director
 		Person tp = new Person ("Todd philips");
 		movie.setDirector(tp);
-		System.out.println(movie + "réalisé par : " + movie.getDirector().getName());
+		System.out.println(movie + "rï¿½alisï¿½ par : " + movie.getDirector().getName());
 		
 		Person clint = new Person("Clint Eastwood", LocalDate.of(1930, 5, 31) );
 		System.out.println(clint + "a " + clint.getAge().getAsInt() + "ans");

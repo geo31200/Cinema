@@ -56,7 +56,7 @@ class TestCinema {
 			new Movie ("Avengers - Endgame",2019, 181),
 			new Movie ("Avengers ", 2012, 143),
 			new Movie ("Captain Marvel ", 2019, 123),
-			new Movie ("Avengers - l'ère d'ultron", 2015, 141)
+			new Movie ("Avengers - l'ï¿½re d'ultron", 2015, 141)
 			);
 	
 	movies.get(0).addActor(persons.get(0));
@@ -79,7 +79,7 @@ class TestCinema {
 	persons.add(new Person("Bradley Cooper", LocalDate.of(1982, 02, 26)));
 	}
 
-	@Test // relie les films et les réalisateurs
+	@Test // relie les films et les rï¿½alisateurs
 	
 	void displayMoviesForI(){
 		
@@ -89,7 +89,7 @@ class TestCinema {
 			System.out.println(" - " + movie + " directed by " + movie.getDirector());
 		}
 	}
-		@Test // relie les films et les réalisateurs
+		@Test // relie les films et les rï¿½alisateurs
 		
 		void displayMoviesForEach(){
 			
@@ -102,7 +102,7 @@ class TestCinema {
 	}
 	
 		
-@Test // relie les films et les réalisateurs
+@Test // relie les films et les rï¿½alisateurs
 		
 		void totalDurationOfMoviesDirectedByClintEastwood()
 {
@@ -157,7 +157,7 @@ class TestCinema {
 		.filter(m -> m.getTitle().contains("Avengers"))
 		.mapToInt(Movie::getYear)
 		.min();
-		System.out.println(" La première année de sortie d'Avengers est : " + FirstYears);
+		System.out.println(" La premiï¿½re annï¿½e de sortie d'Avengers est : " + FirstYears);
 	}
 	
 	@Test
@@ -167,8 +167,8 @@ class TestCinema {
 		.filter(m -> m.getTitle().contains("Avengers"))
 		.mapToInt(Movie::getYear)
 		.summaryStatistics();
-		System.out.println(" La dernière année de sortie d'Avengers est : " + Stats.getMin());
-		System.out.println(" La dernière année de sortie d'Avengers est : " + Stats.getMax());
+		System.out.println(" La derniï¿½re annï¿½e de sortie d'Avengers est : " + Stats.getMin());
+		System.out.println(" La derniï¿½re annï¿½e de sortie d'Avengers est : " + Stats.getMax());
 
 	}
 	
