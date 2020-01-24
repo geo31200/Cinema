@@ -1,5 +1,6 @@
 package cinema.service;
 
+import java.util.List;
 import java.util.Set;
 
 import cinema.persistence.entity.Person;
@@ -29,6 +30,12 @@ public class PersonService implements IPersonService
 
 	@Override
 	public Set<Person> getfindByBirthdateYear(int year) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Person> getAllPersons() {
 		// TODO Auto-generated method stub
 		return null;
 	}

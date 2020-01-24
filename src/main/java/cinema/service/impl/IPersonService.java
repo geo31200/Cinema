@@ -1,5 +1,6 @@
 package cinema.service.impl;
 
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.data.jpa.repository.Query;
@@ -14,6 +15,7 @@ public interface IPersonService {
 	
 	@Query("select p from Person p where extract(year from birthdate) = ?1")
 	Set<Person>getfindByBirthdateYear(int year);
+	List<Person> getAllPersons();
 	
 	
 }

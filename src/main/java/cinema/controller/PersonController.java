@@ -24,6 +24,7 @@ Person addPerson (Person person)
 @GetMapping
 List<Person> getAllPersons() 
 {
-	return null;}
+	return personService.getAllPersons();
+	}
 
 }
